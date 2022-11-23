@@ -1,4 +1,4 @@
-// function to replace map src
+// function to replace video src
 function switchVideoSrc() {
   var e = document.getElementById("video-frame");
   var newSrc = e.getAttribute("data-src") + '?autoplay=1';
@@ -14,7 +14,7 @@ function switchVideoSrc() {
 window.addEventListener('load', function () {
   // site is ready
   
-  // map replace script
+  // video replace script
   // translate to your needs
   const video = document.getElementById("video-wrapper");
   const open_video_link = '<a href="JavaScript:void(0);" onClick="switchVideoSrc();" class="open_video_link btn btn-danger">Video abspielen</a>';
