@@ -2,6 +2,7 @@
 function switchVideoSrc() {
   var e = document.getElementById("video-frame");
   var newSrc = e.getAttribute("data-src") + '?autoplay=1';
+  var newSrc = newSrc.replace("youtube.com", "youtube-nocookie.com");
   document.getElementById("video-frame").src=newSrc;
   var overlay = document.getElementById("video-gdpr-overlay");
   overlay.remove();
