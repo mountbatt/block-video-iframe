@@ -6,10 +6,7 @@ function switchVideoSrc() {
   document.getElementById("video-frame").src=newSrc;
   var overlay = document.getElementById("video-gdpr-overlay");
   overlay.remove();
-  
-  // youtube api call
-  
-  
+
 }
 
 window.addEventListener('load', function () {
